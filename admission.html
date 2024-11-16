@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Process</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .static-header {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      background-color: whitesmoke;
+      color: white
+      padding: 10px;
+      font-size: 15px;
+      z-index: 1000; /* Keeps header above other content */
+      font-family: Montserrat;
+    }
+
+    .proceed-button {
+            background-color: #007bff; /* Button color */
+            color: white;              /* Text color */
+            border: none;              /* Remove border */
+            padding: 10px 20px;        /* Button padding */
+            border-radius: 5px;        /* Rounded corners */
+            cursor: pointer;           /* Pointer on hover */
+            font-size: 16px;           /* Font size */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .proceed-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+        body {
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            font-size: 21px;
+        }
+
+        .container {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Top Image and Heading */
+        .top-image {
+            width: 100%;
+            align-items: center;
+            position: relative;
+            height: 300px;
+            background: url('pictures/campuses/primary1.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            margin: auto;
+        }
+
+        .top-image h1 {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* Main Heading */
+        .main-heading {
+            font-size: 24px;
+            color: black;
+            margin: 20px 0;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Steps Container */
+        .step-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin-left: 120px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .step img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+        }
+
+        .step-number {
+            font-size: 30px;
+            color: navy;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+
+        .description {
+            text-align: left;
+        }
+
+        .horizontal-line {
+            width: 80%;
+            height: 2px;
+            background-color: goldenrod;
+            margin: 20px auto;
+        }
+        ul{
+            margin-left: 45px;
+        }
+           /* Footer styling */
+    
+    </style>
+</head>
+<body>
+<header class="static-header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="pictures/campuses/djslogo2.png" alt="Diamond Junior School">
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#our-school"><b>OUR SCHOOL</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html#mission">Mission & Vision</a></li>
+                            <li><a href="index.html#history">About Us</a></li>
+                             <li><a href="index.html#awards">Awards</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#education"><b>EDUCATION</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html#Kindergarten">Kindergarten</a></li>
+                            <li><a href="index.html#Primary">Primary</a></li>
+                            <li><a href="index.html#Junior">Junior Secondary</a></li>
+                            <li><a href="#index.html#curricular">Extracurricular</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#campuses"><b>CAMPUSES</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html#campuses" target="index.html">Our Campuses</a></li>
+                            <li><a href="southb.html" target="index.html">South B Campus</a></li>
+                            <li><a href="crystalrivers.html" target="index.html">Crystal Rivers Campus</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#admissions"><b>ADMISSIONS</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="https://djs.mzizi.co.ke/portal/preApplication.aspx?q=612b0367cae78e2b29778061f1d6556a">Enroll now</a></li>
+                            <li> <a href="admission.html"  target="index.html">Admission Process</a></li>
+                            <li><a href="feestructure.html" target="index.html">Fee Stucture</a></li>
+                            <li> <a href="pictures/2025fees/uniforms.pdf" download="pictures/2025fees/uniforms.pdf" target="index.html">School Uniform</a></li>
+                            <li> <a href="pictures/2025fees/djsfaqs.pdf" download="pictures/2025fees/djsfaqs.pdf" target="index.html">FAQs</a></li>
+                            <li><a href="busroutes.html" target="index.html">Bus Routes</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#news"><b>NEWS & UPDATES</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="gallery.html" target="index.html">Media</a></li>
+                            <li><a href="#events" target="index.html">School Calendar</a></li>
+                            <li><a href="#newsletters" target="index.html">Newsletters</a></li>
+                            <li><a href="#announcements" target="index.html">Year Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://djs.mzizi.co.ke/portal/preApplication.aspx?q=612b0367cae78e2b29778061f1d6556a" target="index.html"><b>ENROL</b></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#visit"><b>QUICK LINKS</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="feestructure.html" target="index.html">Our Locations</a></li>
+                             <li><a href="https://djs.mzizi.co.ke/ISIMSLogin.aspx" target="index.html">Parent's Portal</a></li>
+                             <li><a href="https://djs.mzizi.co.ke/ISIMSLogin.aspx" target="index.html">Prospect's Portal</a></li>
+                             <li><a href="https://login.pearson.com/v1/piapi/piui/signin?client_id=mCfHl22MzgSG9oQ21dUc3GGNPShmrgeb&login_success_url=https:%2F%2Fwww.activelearnprimary.co.uk%2Flogin-redirect%3Fc%3D0%26retry%3D1%26iesCode%3Dw2ps5lPJ9J" target="index.html">Bug Club's Portal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+       
+
+        <a href="https://wa.me/+254715591879" class="whatsapp-float" target="_blank">
+        <img src="pictures/campuses/whatsapp.png" alt="WhatsApp Icon" class="whatsapp-icon">
+        <span>Chat with us</span></a>
+        <a class="whatsapp-floater">
+        <img src="pictures/campuses/call.png" alt="Call-Icon" class="whatsapp-icon">
+        <span>+254 715 591879</span></a>
+        
+
+    
+    </header><br><br><br><br>
+
+    <div class="container">
+        <!-- Top Image -->
+        <div class="top-image">
+            <h1><mark style="background-color: lightblue; font-size:50px;">Admission Process</mark></h1>
+        </div>
+
+        <!-- Main Heading --><br><br>
+        <h2 class="main-heading" style="font-size: 34px;">Register Your Interest With Us in a Few Simple Steps:</h2>   
+        
+        <!-- Steps -->
+        <div class="step-container">
+            <!-- Step 1 -->
+            <div class="horizontal-line"></div>
+            <div class="step">
+                <img src="pictures/campuses/step.jpg" alt="Step 1">
+                <div class="description">
+                    <div class="step-number">Step 1: Application</div><br>
+                    <ul>
+                        <li>Click <a href="https://djs.mzizi.co.ke/portal/preApplication.aspx?q=612b0367cae78e2b29778061f1d6556a">here</a> to fill a Prospectus application form.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="horizontal-line"></div>
+            <div class="step">
+                <img src="pictures/campuses/step.jpg" alt="Step 2">
+                <div class="description">
+                    <div class="step-number">Step 2: Feedback From School.</div><br>
+                    <ul>
+                        <li>The School will receive and review the application form. </li><br>
+                        <li>The administrator will get intouch with you after reviewing the application form to schedule an entry assessment.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Repeat for Steps 3 through 6 -->
+            <div class="horizontal-line"></div>
+            <div class="step">
+                <img src="pictures/campuses/step.jpg" alt="Step 3">
+                <div class="description">
+                    <div class="step-number">Step 3: Interview</div><br>
+                    <ul>
+                        <li>Kindergarten learners are welcome to join a taster day and are assessed by the Head of the Kindergarten's section. </li><br>
+                        <li>Grade 1 to Grade 8 learners are invited to attend an interview with the Head of Academics before meeting with the School Principal.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal-line"></div>
+            <div class="step">
+                <img src="pictures/campuses/step.jpg" alt="Step 4">
+                <div class="description">
+                    <div class="step-number">Step 4: Offer Letter</div><br>
+                    <ul>
+                        <li>Confirmation of admission upon successful interview. The offer letter will be sent to the parents or legal guardians.</li>
+           
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal-line"></div>
+            <div class="step">
+                <img src="pictures/campuses/step.jpg" alt="Step 5">
+                <div class="description">
+                    <div class="step-number">Step 5: Fees Payment</div><br>
+                    <ul>
+                        <li>Parents/guardians pay are required to pay full school fees and caution fee upon receiving offer letter before admission.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal-line"></div>
+            <div class="step">
+                <img src="pictures/campuses/step.jpg" alt="Step 6">
+                <div class="description">
+                    <div class="step-number">Step 6: Admission</div><br>
+                    <ul>
+                        <li>Your Child is fully admitted to Diamond Junior School.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+     <a href="https://djs.mzizi.co.ke/portal/preApplication.aspx?q=612b0367cae78e2b29778061f1d6556a">
+    <button class="proceed-button">Click to Proceed</button>
+</a>
+<br><br>
+
+        
+<!-- Footer Section -->
+<div class="footer-footer" style="width:100%;">
+  <div class="footer-footer-container">
+    <!-- First Image Section -->
+    <div class="footer-image-section">
+      
+      <p class="footer-heading">South B Campus </p><br>
+      <p class="footer-subheading"><b>+254 715 591 879</b></p><br>
+      <p class="footer-description">info@diamondjunior.com</p>
+      <a href="https://wa.me/+254715591879" class="footer-whatsapp-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with us
+      </a>
+    </div>
+
+    <!-- Second Image Section -->
+    <div class="footer-image-section">
+      
+      <p class="footer-heading">Crystal Rivers Campus</p><br>
+      <p class="footer-subheading"><b>+254 724 676 767</b></p><br>
+      <p class="footer-description">info@diamondjunior.com</p>
+      <a href="https://wa.me/+254724676767" class="footer-whatsapp-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with us </a>
+    </div>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="footer-social-media">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <br><br>
+  <p style="color:white;">© 2024 Diamond Junior School. All rights reserved.</p>
+</div>
+    
+</body>
+</html>

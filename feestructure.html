@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        
+
+        .fee-structure {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .map-container {
+            display: flex; /* Use flexbox for horizontal arrangement */
+            justify-content: center;
+            gap: 50px; /* Space between maps */
+            margin-bottom: 20px;
+
+        }
+
+        .map {
+            width: 400px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            border: 2px solid darkred;
+
+        }
+
+        .download-link {
+            display: block; /* Make each link a block element */
+            margin-top: 10px; /* Space between the map and the link */
+            margin-left: 20px;
+        }
+        p{
+            text-align: left; /* Align text to the left */
+            margin-left: 40px;   /* Ensure no extra indentation */
+            margin-right: 0;  /* Ensure no extra space on the right */
+            line-height: 1.5; /* Adjust line height if needed for readability */
+            width: 96%;
+        }
+         .static-header {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      background-color: whitesmoke;
+      color: white
+      padding: 10px;
+      font-size: 15px;
+      z-index: 1000; /* Keeps header above other content */
+    }
+
+        
+    </style>
+</head>
+<body>
+    <header class="static-header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="pictures/campuses/djslogo2.png" alt="Diamond Junior School">
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#our-school"><b>OUR SCHOOL</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="homepage.html#mission">Mission & Vision</a></li>
+                            <li><a href="homepage.html#history">About Us</a></li>
+                             <li><a href="homepage.html#awards">Awards</a></li>
+                             <li><a href="homepage.html#awards">Gallery</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#education"><b>EDUCATION</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="homepage.html#Kindergarten">Kindergarten</a></li>
+                            <li><a href="homepage.html#Primary">Primary</a></li>
+                            <li><a href="homepage.html#Junior">Junior Secondary</a></li>
+                            <li><a href="#homepage.html#curricular">Extracurricular</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#campuses"><b>CAMPUSES</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="homepage.html#campuses" target="homepage.html">Our Campuses</a></li>
+                            <li><a href="southb.html" target="homepage.html">South B Campus</a></li>
+                            <li><a href="crystalrivers.html" target="homepage.html">Crystal Rivers Campus</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#admissions"><b>ADMISSIONS</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="https://djs.mzizi.co.ke/portal/preApplication.aspx?q=612b0367cae78e2b29778061f1d6556a">Enroll now</a></li>
+                            <li> <a href="admission.html"  target="homepage.html">Admission Process</a></li>
+                            <li><a href="feestructure.html" target="homepage.html">Fee Stucture</a></li>
+                            <li> <a href="pictures/2025fees/uniforms.pdf" download="pictures/2025fees/uniforms.pdf" target="homepage.html">School Uniform</a></li>
+                            <li> <a href="pictures/2025fees/djsfaqs.pdf" download="pictures/2025fees/djsfaqs.pdf" target="homepage.html">FAQs</a></li>
+                            <li><a href="#Bronchure" target="homepage.html">Download Bronchure</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#news"><b>NEWS & UPDATES</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="gallery.html" target="homepage.html">Media</a></li>
+                            <li><a href="#events" target="homepage.html">School Calendar</a></li>
+                            <li><a href="#newsletters" target="homepage.html">Newsletters</a></li>
+                            <li><a href="#announcements" target="homepage.html">Year Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://djs.mzizi.co.ke/portal/preApplication.aspx?q=612b0367cae78e2b29778061f1d6556a" target="homepage.html"><b>ENROL</b></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#visit"><b>QUICK LINKS</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="feestructure.html" target="homepage.html">Our Locations</a></li>
+                             <li><a href="https://djs.mzizi.co.ke/ISIMSLogin.aspx" target="homepage.html">Parent's Portal</a></li>
+                             <li><a href="https://djs.mzizi.co.ke/ISIMSLogin.aspx" target="homepage.html">Prospect's Portal</a></li>
+                             <li><a href="https://login.pearson.com/v1/piapi/piui/signin?client_id=mCfHl22MzgSG9oQ21dUc3GGNPShmrgeb&login_success_url=https:%2F%2Fwww.activelearnprimary.co.uk%2Flogin-redirect%3Fc%3D0%26retry%3D1%26iesCode%3Dw2ps5lPJ9J" target="homepage.html">Bug Club's Portal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+       
+
+        <a href="https://wa.me/+254715591879" class="whatsapp-float" target="_blank">
+        <img src="pictures/campuses/whatsapp.png" alt="WhatsApp Icon" class="whatsapp-icon">
+        <span>Chat with us</span></a>
+        <a class="whatsapp-floater">
+        <img src="pictures/campuses/call.png" alt="Call-Icon" class="whatsapp-icon">
+        <span>+254 715 591879</span></a>
+        
+
+    
+    </header>
+    <br><br><br><br><br><br><br><br>
+    <div class="fee-image-container">
+        <img src="website/chapel1.jpg" alt="Growing Image">
+        <div class="fee-caption" style="font-size:35px;">DIAMOND JUNIOR SCHOOL FEE STRUCTURE</div>
+    </div>
+    
+   
+
+    <div class="fee-structure"><br><br>
+    <p>Diamond Junior offers your child a world-class learning experience and high-quality education at an affordable price. <br>Please click on the links at the bottom of the page.
+
+Thank you for paying your fees on time. If you have any questions or would like to discuss any part of your money, we are always available.<br><br>
+
+<b>NOTE: Cash payments are NOT accepted. For Cheques please present a deposit slip as proof of payment.</b></p><br><br><br>
+
+        <div class="map-container">
+            <!-- Google Map for Branch 1 -->
+            <div>
+                
+                <iframe class="map" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.755597503651!2d36.850516474045854!3d-1.322454435664788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1193d84785dd%3A0x5f046e78bf533301!2sDiamond%20Junior%20School!5e0!3m2!1sen!2ske!4v1730714276528!5m2!1sen!2ske" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+                    <h1><br>South B Campus</h1>
+                    <ol>
+                        <li><a class="download-link" href="pictures/2025fees/djssouthbplaygroup.pdf" download="pictures/2025fees/djssouthbplaygroup.pdf" style="text-align: left;">Download Play-Group Fee Structure-2025 </a></li>
+                
+                <li><a class="download-link" href="pictures/2025fees/sbcbc.pdf" download="pictures/2025fees/sbcbc.pdf" style="text-align: left;">Download CBC Fee Structure-2025</a></li>
+                <li><a class="download-link" href="pictures/2025fees/juniorsecondary.pdf" download="pictures/2025fees/juniorsecondary.pdf" style="text-align: left;">Download Junior Secondary Fee Structure PDF</a></li>
+            </ol>
+            </div>
+
+            <!-- Google Map for Branch 2 -->
+            <div>
+                <iframe class="map" 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.244258993636!2d36.9823149!3d-1.4384152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f75527bd336b9%3A0x646d5c9d60f09d18!2sDiamond%20Junior%20School%2C%20Crystal%20Rivers%20Campus!5e0!3m2!1sen!2ske!4v1730714117197!5m2!1sen!2ske" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+                    <h1><br>Crystal Rivers Campus</h1>
+                    <ol>
+               <li > <a class="download-link" href="pictures/2025fees/crystalplaygroup.pdf" download="pictures/2025fees/crystalplaygroup.pdf" style="text-align: left;">Download Play-Group Fee Structure-2025</a></li>
+               <li> <a class="download-link" href="pictures/2025fees/djscrcbc.pdf" download="pictures/2025fees/djscrcbc.pdf" style="text-align: left;">Download Download CBC Fee Structure-2025</a></li>
+                <li><a class="download-link" href="pictures/2025fees/juniorsecondary.pdf" download="pictures/2025fees/juniorsecondary.pdf" style="text-align: left;">Download Download Junior Secondary Fee Structure PDF</a></li>
+            </ol>
+            </div>
+        </div>
+    </div>
+
+        
+<!-- Footer Section -->
+<div class="footer-footer">
+  <div class="footer-footer-container">
+    <!-- First Image Section -->
+    <div class="footer-image-section">
+      
+      <p class="footer-heading">South B Campus </p><br>
+      <p class="footer-subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>+254 715 591 879</b></p><br>
+      <p class="footer-description">info@diamondjunior.com</p>
+      <a href="https://wa.me/+254715591879" class="footer-whatsapp-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with us
+      </a>
+    </div>
+
+    <!-- Second Image Section -->
+    <div class="footer-image-section">
+      
+      <p class="footer-heading" style="font-size: 25px;">Crystal Rivers Campus</p><br>
+      <p class="footer-subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>+254 724 676 767</b></p><br>
+      <p class="footer-description">info@diamondjunior.com</p>
+      <a href="https://wa.me/+254724676767" class="footer-whatsapp-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with us
+      </a>
+    </div>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="footer-social-media">
+    <a href="https://facebook.com" target="homepage.html"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="homepage.html"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="homepage.html"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com" target="homepage.html"><i class="fab fa-youtube"></i></a>
+  </div><br><br>
+  <p style="color:white; text-align:center;">© 2024 Diamond Junior School. All rights reserved.</p>
+
+</div>
+    
+
+</body>
+</html>

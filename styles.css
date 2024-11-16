@@ -1,0 +1,601 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: start;
+    background-color: white; /* Customize as needed */
+    padding: 10px 20px;
+    margin-top: 0px;
+
+}
+
+.logo img {
+    width: 250px; 
+    height:130px;/* Adjust as needed for logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #003366;
+    text-decoration: underline;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #89CFF0 ;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #003366;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*code for whatsapp account*/
+/* WhatsApp Floating Icon Styles */
+.whatsapp-float {
+    position: fixed;
+    top: 80px;          /* Distance from the bottom */
+    right: 15px;           /* Distance from the right */
+    background-color: #25D366; /* WhatsApp green color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+.whatsapp-floater {
+    position: fixed;
+    top: 80px;          /* Distance from the bottom */
+    right: 280px;           /* Distance from the right */
+    background-color: white; /* WhatsApp green color */
+    color: black;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+/* Image Container Styling */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: auto;
+}
+
+/* Background Image Styling */
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.85; /* Slight opacity for clarity */
+}
+
+/* Text Overlay Styling */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 80%;
+}
+
+.text-overlay h2 {
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*Header slider images */
+ /* Slideshow container to hold the images */
+                /* Slideshow Container */
+        .header-slideshow-container {
+            width: 100%;
+            height: 580px;
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        /* Individual Slide */
+        .header-slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Caption Styling */
+        .header-caption {
+            position: absolute;
+            bottom: 10px;
+            left: -100%;
+            width: 100%;
+            font-size: 24px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            white-space: nowrap;
+            animation: slide-in 3s forwards;
+            font-size: 50px;
+          
+        }
+
+        /* Animation for Captions */
+        @keyframes slide-in {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        /* Fade Animation for Slides */
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+
+/*horizontal line style */
+ .horizontal-line {
+            height: 5px; /* Set the height of the line */
+            background-color: white; /* Set the color of the line */
+            margin: 20px 0; /* Add space above and below the line */
+            width: 100%; /* Set the width of the line */
+        
+                }
+/* Container for the entire section */
+    .abt-school-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 25px;
+      margin: auto;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style for the image slideshow area */
+    .abt-school-slideshow-container {
+      flex: 1;
+      margin-left: 2px;
+      position: relative;
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Style for the text area */
+    .abt-school-description {
+      flex: 1;
+      margin-right: 2px;
+      color: black;
+      padding: 20px;
+      text-align: left;
+      background-color:white;
+      line-height: 1.4;
+      border-left: 1px solid #ddd;
+      font-weight: normal;
+    }
+
+    /* Show the first slide initially */
+    .slides:first-child {
+      display: block;
+    }
+    /* Container for the entire section */
+    .branches-container {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      width: 100%;
+      margin: auto;
+    }
+    .branches-container-3 {
+      text-align: center;
+      padding: 20px;
+     
+      width: 100%;
+      margin: auto;
+    }
+
+    /* Title styling */
+    .branches-container h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Flexbox for images and descriptions */
+    .branches-image-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* Image styling */
+    .branches-image-container {
+      flex: 1;
+    }
+
+    .branches-image-container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Description styling */
+    .description {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    /* Button styling */
+    .branches-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    /* Hover effect for buttons */
+    .branches-btn:hover {
+      background-color: #0056b3;
+    }
+     /* Main container styling for the vision and mission */
+    .vision-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border: .1px solid #ddd;
+      width: 90%;
+      margin: auto;
+      background-color: whitesmoke;
+        font-weight: normal;
+    }
+
+    /* Section styling */
+    .section {
+      flex: 1;
+      margin: 0 10px; /* Space between the sections */
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Heading colors for each section */
+    .section1 h3 {
+      color: red; 
+       font-size: 35px;
+    }
+
+    .section2 h3 {
+      color: #33c4ff; /* Blue */
+       font-size: 35px;
+    }
+
+    .section3 h3 {
+      color: goldenrod; /* Green */
+       font-size: 35px;
+    }
+
+    /* General heading and description styling */
+    .vision h3 {
+      margin-bottom: 10px;
+    }
+
+    .vision p {
+      font-size: 14px;
+      line-height: 1.6;
+    
+    }
+
+    /* Main container styling  for core values section*/
+    .corevalue-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border: 2px solid white; /* Border around the main div */
+      border-radius: 8px;
+      width: 100%;
+      margin: auto;
+      background-color: whitesmoke;
+      font-weight: normal;
+    }
+
+    /* Section styling */
+    .corevalue-section {
+      flex: 1;
+      padding: 15px;
+      margin: 0 10px; /* Space between the sections */
+    }
+
+    /* Heading colors for each section */
+    .corevalue-section1 h3 {
+      color: green; /* Red */
+      font-size: 45px;
+      font-weight: bolder;
+
+    }
+
+    .corevalue-section2 h3 {
+      color: red; 
+      font-size: 45px;
+      font-weight: bolder;
+
+    }
+
+    .corevalue-section3 h3 {
+      color: yellow; 
+      font-size: 45px;
+      font-weight: bolder;
+    }
+
+    .corevalue-section4 h3 {
+      color: firebrick; 
+      font-size: 45px;
+      font-weight: bolder;
+    }
+
+    /* General subheading and description styling */
+    .corevalue h4 {
+      font-weight: normal;
+      color: #555;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 50px;
+    }
+
+    .corevalue p {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #666;
+    }
+        /* Footer styling */
+    .footer-footer {
+      /*background-color: #0c1f40;*/
+      background-color: #0c1f40;
+      padding: 20px;
+      border-top: 2px solid #ddd;
+      text-align: center;
+
+    }
+
+    /* Footer container styling */
+    .footer-footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+    }
+
+    /* Image and content section styling */
+    .footer-image-section {
+      max-width: 300px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .footer-image-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .footer-heading {
+      font-weight: bold;
+      margin-top: 2px;
+      font-size: 24px;
+      color: white;
+    }
+
+    .footer-subheading {
+      font-weight: normal;
+      color: white;
+      font-size: 19px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .footer-description {
+      font-size:16px;
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+
+    .footer-whatsapp-link {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Social media icons styling */
+    .footer-social-media {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 0px;
+    }
+
+    .footer-social-media a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .footer-social-media a:hover {
+      color: #000;
+    }
+    .galler-main-div {
+            width: 96%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            height: 200px;
+        }
+
+        .galler-inner-div {
+            width: 13%; /* 7 divs in total, adjust based on your layout preference */
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .galler-inner-div img {
+            width: 100%;
+            border-radius: 8px;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .galler-inner-div .title {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+            text-transform: capitalize;
+        }
+         /* Container for the video */
+        .video-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Styling for the video to fit the container */
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .fee-image-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .fee-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: grow 10s infinite alternate ease-in-out;
+        }
+        @keyframes grow {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+        }
+        .fee-caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+        }
